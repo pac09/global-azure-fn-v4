@@ -1,0 +1,6 @@
+{
+    "endpoint": "https://artist-api.documents.azure.com:443/",
+    "key": "bsxmKclYcZUhy5Iwu3480cU8TKqvXcWBM54XUoLVqD6iY0PA8DUZhJJF99jkg3wUm2YiLJiLngYBACDbLMEZ1Q==",
+    "databaseId": "ArtistsDB",
+    "containerId": "Artists"
+}
