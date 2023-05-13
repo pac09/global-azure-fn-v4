@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "771ca488-9fe3-4799-831d-aee35d896b27",
+		"name": "az-functions-demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "295122"
+	},
+	"item": [
+		{
+			"name": "CreateArtist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Heroes del Silecio\",\r\n    \"nationality\": \"Spanish\",\r\n    \"founded\": 1984\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/createArtist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"createArtist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateArtist",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/updateArtist?name=Metallica&newName=Guns N Roses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"updateArtist"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Metallica"
+						},
+						{
+							"key": "newName",
+							"value": "Guns N Roses"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetArtist",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/getArtist?name=Metallica",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"getArtist"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Metallica"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
